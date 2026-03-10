@@ -1,0 +1,16 @@
+{
+  "name": "tupac-time-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Aphex",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aphex/tupach-time.git"
+  },
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test"
+  }
+}

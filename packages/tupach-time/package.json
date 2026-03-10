@@ -1,0 +1,40 @@
+{
+  "name": "tupach-time",
+  "version": "1.0.0",
+  "description": "Shift the epoch to Tupac's exact time of death, gaining an extra 842,655,780 seconds (~26.7 years) before 32-bit time overflows.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [
+    "tupac",
+    "time",
+    "epoch"
+  ],
+  "author": "Aphex",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aphex/tupach-time.git"
+  },
+  "packageManager": "pnpm@10.31.0",
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
